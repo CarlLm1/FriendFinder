@@ -12,18 +12,7 @@ var PORT = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Routes
-// =============================================================
 
-// Basic route that sends the user first to the AJAX Page
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "view.html"));
-  });
-  
-  app.get("/add", function(req, res) {
-    res.sendFile(path.join(__dirname, "add.html"));
-  });
-  
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
