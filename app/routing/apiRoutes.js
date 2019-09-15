@@ -1,4 +1,4 @@
-var friendData = require("../data/friends")
+var friendData = require("../data/friends").default
 var express = require("express")
 var router = express.Router()
 var app = express()
