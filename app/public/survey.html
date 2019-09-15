@@ -10,7 +10,180 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>  
 </head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Survey</h1>
+            <hr>
+        </div>
+        
+        <div id="info" class="mb-4">
+            <h3>About You:</h3>
+            <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> Name : </span>
+                    </div>
+                    <input type="text" id="name" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="Who are you?">
+            </div>
+            <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Photo URL : </span>
+                    </div>
+                    <input type="text" id="photo" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value = "Enter your Photo URL here">
+            </div>
+        </div>
+        <hr>
+        <div id="survey" class="mt-4">
+            <h3>Question 1</h3>
+            <p>Nintendo is the best video game company</p>
+            <select id="q1">
+                <option value="1">Choose one</option>
+                <option value="1">Strongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Sometimes Agree/Disagree</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select>
+
+            <h3 class="mt-4">Question 2</h3>
+            <p>Mario is the best video game mascot</p>
+            <select id="q2">
+                <option value="1">Choose one</option>
+                <option value="1">Strongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Sometimes Agree/Disagree</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select>
+
+            <h3 class="mt-4">Question 3</h3>
+            <p>Game files should be saved on a regular basis</p>
+            <select id="q3">
+                <option value="1">Choose one</option>
+                <option value="1">Strongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Sometimes Agree/Disagree</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select>
+
+            <h3 class="mt-4">Question 4</h3>
+            <p>Nintendo is better than Microsoft</p>
+            <select id="q4">
+                <option value="1">Choose one</option>
+                <option value="1">Strongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Sometimes Agree/Disagree</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select>
+
+            <h3 class="mt-4">Question 5</h3>
+            <p>I'd rather be playing video games than being outside during my free time</p>
+            <select id="q5">
+                <option value="1">Choose one</option>               
+                <option value="1">Strongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Sometimes Agree/Disagree</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select>
+
+            <h3 class="mt-4">Question 6</h3>
+            <p>Stealth horror games are fun</p>
+            <select id="q6">
+                <option value="1">Choose one</option>               
+                <option value="1">Strongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Sometimes Agree/Disagree</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select>
+
+            <h3 class="mt-4">Question 7</h3>
+            <p>Fighting games are fun</p>
+            <select id="q7">
+                <option value="1">Choose one</option>               
+                <option value="1">Strongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Sometimes Agree/Disagree</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select>
+
+            <h3 class="mt-4">Question 8</h3>
+            <p>Games that are rated "E for Everyone" can still be fun</p>
+            <select id="q8">
+                <option value="1">Choose one</option>               
+                <option value="1">Strongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Sometimes Agree/Disagree</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select>
+
+            <h3 class="mt-4">Question 9</h3>
+            <p>I like making jokes when playing games</p>
+            <select id="q9">
+                <option value="1">Choose one</option>               
+                <option value="1">Strongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Sometimes Agree/Disagree</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select>
+
+            <h3 class="mt-4">Question 10</h3>
+            <p>I would rather play by myself than with others</p>
+            <select id="q10">
+                <option value="1">Choose one</option>               
+                <option value="1">Strongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Sometimes Agree/Disagree</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select>
+    </div>
+    
+
+    <button type="button" id="submit" class="btn btn-primary mt-4" data-toggle="modal" data-target="#exampleModalCenter">
+        Submit Answers
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalCenterTitle">Foodie Results</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+          <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/CarlLm1/FriendFinder">GitHub Repo</a></p>
+        </div>
+      </footer>
+</body>
+</html>
 
 
 
